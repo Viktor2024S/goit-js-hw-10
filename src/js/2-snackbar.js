@@ -28,5 +28,8 @@ document
           title: 'Error',
           message: `❌ Rejected promise in ${delay}ms`,
         });
+      })
+      .finally(() => {
+        this.reset();
       });
   });
