@@ -1,7 +1,10 @@
+import iziToast from 'izitoast';
+import 'izitoast/dist/css/iziToast.min.css';
+
 document
   .getElementById('promiseForm')
   .addEventListener('submit', function (event) {
-    event.preventDefault();
+    event.preventDefault(); // Prevent form from submitting
 
     const delay = Number(this.delay.value);
     const state = this.state.value;
@@ -30,6 +33,7 @@ document
         });
       })
       .finally(() => {
+        // Clear the form fields
         this.reset();
       });
   });
