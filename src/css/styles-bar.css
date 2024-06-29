@@ -79,3 +79,27 @@ fieldset {
   padding: 10px;
   border-radius: 4px;
 }
+
+input[name='delay'] {
+  width: 200px;
+  box-sizing: border-box;
+}
+/*  */
+a {
+  color: blue;
+  text-decoration: underline;
+  font-size: 16px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+section {
+  text-align: center;
+}
